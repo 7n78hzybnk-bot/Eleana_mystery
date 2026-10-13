@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>ملف 017 | اختفاء إيلينا</title>
+<style>
+:root{--ink:#f4f1ec;--muted:#aaa8b2;--glass:rgba(19,20,29,.88);--line:rgba(255,255,255,.12);--accent:#b7a4e8}
+*{box-sizing:border-box} body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 0%,#343047 0%,#15151e 48%,#090a0e 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif;display:flex;align-items:center;justify-content:center;padding:16px}
+.wrap{width:min(100%,390px)} .caption{text-align:center;font-size:11px;letter-spacing:3px;color:#b9b1c9;margin:0 0 12px}
+.phone{height:min(820px,calc(100dvh - 54px));min-height:610px;border:2px solid #77727f;border-radius:43px;padding:9px;background:#050507;box-shadow:0 28px 80px #000b,0 0 0 1px #ffffff20;position:relative;overflow:hidden}
+.screen{height:100%;border-radius:34px;overflow:hidden;position:relative;background:linear-gradient(155deg,#252538,#11131b 52%,#17121d)}
+.status{height:34px;display:flex;justify-content:space-between;align-items:center;padding:0 19px;font-size:12px;position:relative;z-index:5}
+.island{position:absolute;top:7px;left:50%;transform:translateX(-50%);width:91px;height:24px;border-radius:20px;background:#020203}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:8px 18px 13px}
+.kicker{font-size:10px;color:#aaa4b9;letter-spacing:1.5px}.title{font-size:23px;font-weight:750;margin-top:3px}.case{font-size:10px;border:1px solid #b9a4e866;color:#d6c9f7;padding:7px 9px;border-radius:12px}
+.view{display:none;height:calc(100% - 89px);overflow:auto;padding:8px 15px 28px;scrollbar-width:none}.view::-webkit-scrollbar{display:none}.view.active{display:block}
+.hero{height:165px;border-radius:22px;position:relative;overflow:hidden;margin:4px 0 16px;background:linear-gradient(130deg,#292b3d,#4c3d50 48%,#181b29);border:1px solid var(--line)}
+.moon{position:absolute;width:80px;height:80px;border-radius:50%;background:#d7cfe5;top:18px;left:34px;box-shadow:0 0 35px #c9b9ec55}
+.building{position:absolute;bottom:0;left:0;right:0;height:75px;background:#171923;clip-path:polygon(0 48%,12% 48%,12% 22%,19% 22%,19% 0,35% 0,35% 42%,50% 42%,50% 15%,62% 15%,62% 55%,75% 55%,75% 30%,90% 30%,90% 50%,100% 50%,100% 100%,0 100%)}
+.heroText{position:absolute;bottom:14px;right:16px;z-index:1}.heroText small{color:#c4b7d9;font-size:10px;letter-spacing:2px}.heroText h2{font-size:19px;margin:5px 0 0}
+.sectionHead{display:flex;align-items:center;justify-content:space-between;font-size:13px;font-weight:700;margin:16px 2px 10px}.sectionHead span{font-size:10px;color:var(--muted);font-weight:400}
+.apps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px 8px;margin:14px 0 20px}
+.app{border:0;background:transparent;color:var(--ink);display:flex;flex-direction:column;align-items:center;gap:7px;padding:0;cursor:pointer;font:inherit}
+.icon{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;font-size:25px;box-shadow:0 7px 18px #0004;border:1px solid #ffffff1c}
+.whatsapp{background:linear-gradient(145deg,#42d77b,#12894d)}.photos{background:linear-gradient(145deg,#e8d7ff,#a5a5ff)}.calls{background:linear-gradient(145deg,#64d98e,#168c59)}.notes{background:linear-gradient(145deg,#ffe69a,#d9a743)}.files{background:linear-gradient(145deg,#9fc9ff,#4b75c4)}.settings{background:linear-gradient(145deg,#c8c9d5,#686b7c)}
+.app label{font-size:10px;color:#e6e1ee}
+.notice{border:1px solid #a995d544;background:#a995d512;border-radius:16px;padding:12px 13px;font-size:11px;line-height:1.8;color:#d7d0e3}
+.bottomNav{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);height:5px;width:110px;border-radius:5px;background:#fff;z-index:8}
+.back{border:0;background:#ffffff10;color:#e6ddf7;border-radius:11px;padding:8px 11px;font-size:12px;cursor:pointer}
+.pageHead{display:flex;justify-content:space-between;align-items:center;margin:0 0 13px}.pageHead h2{font-size:20px;margin:0}.sub{font-size:11px;color:var(--muted);margin:4px 0 14px}
+.chatlist{display:flex;flex-direction:column;gap:7px}.chatrow{display:flex;align-items:center;gap:11px;width:100%;text-align:right;border:1px solid var(--line);background:#ffffff08;color:var(--ink);padding:11px;border-radius:16px;cursor:pointer}
+.avatar{width:43px;height:43px;flex-shrink:0;border-radius:50%;display:grid;place-items:center;background:linear-gradient(140deg,#796c91,#39354b);font-weight:700;font-size:14px}
+.chatmeta{flex:1;min-width:0}.chatname{font-size:13px;font-weight:700}.preview{font-size:10px;color:#aaa7b4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:5px}.time{font-size:9px;color:#9e9aaa;align-self:flex-start}
+.chatroom{height:calc(100% - 4px);display:flex;flex-direction:column;min-height:420px;background:linear-gradient(#181c26,#11141b);border:1px solid #ffffff10;border-radius:19px;overflow:hidden}
+.chatbar{display:flex;align-items:center;gap:9px;padding:10px;background:#252a34;border-bottom:1px solid var(--line)}.chatbar .avatar{width:34px;height:34px;font-size:12px}.chatbar .chatname{font-size:12px}.online{font-size:9px;color:#a4d8b2;margin-top:3px}
+.messages{flex:1;overflow:auto;padding:13px 10px;display:flex;flex-direction:column;gap:9px;background-image:radial-gradient(#ffffff06 1px,transparent 1px);background-size:17px 17px}
+.bubble{max-width:84%;padding:9px 10px;border-radius:13px;font-size:12px;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere;position:relative}
+.bubble.them{align-self:flex-start;background:#30343e;border-top-left-radius:4px}.bubble.me{align-self:flex-end;background:#66527c;border-top-right-radius:4px}.bubble.system{align-self:center;max-width:95%;text-align:center;color:#c9bddc;background:#a38ac51c;border:1px solid #a38ac52a;font-size:10px}
+.bubble time{display:block;text-align:left;color:#c1b9cb;font-size:8px;margin-top:3px}
+.replyArea{padding:9px;background:#1b1e27;border-top:1px solid var(--line)}.replyHint{font-size:10px;color:#b6adc5;margin:0 0 8px}.choices{display:flex;flex-direction:column;gap:6px}.choice{background:#302a3d;color:#f3edf9;border:1px solid #9e88c766;border-radius:12px;text-align:right;padding:10px 11px;font:inherit;font-size:11px;cursor:pointer}.choice:active{transform:scale(.99)}.replyDone{font-size:10px;color:#9caeaa;text-align:center;padding:4px}
+.card{background:#ffffff08;border:1px solid var(--line);border-radius:16px;padding:13px;margin-bottom:9px}.card h3{font-size:13px;margin:0 0 7px}.card p{font-size:11px;line-height:1.8;color:#c5c0ce;margin:0}.evidence{display:flex;gap:11px;align-items:center}.evidence .thumb{width:70px;height:70px;flex-shrink:0;border-radius:12px;background:linear-gradient(135deg,#3b3c4c,#9a849d);display:grid;place-items:center;font-size:26px}.locked{opacity:.8}.tag{font-size:9px;color:#d7c4ff;border:1px solid #9c84c655;padding:3px 7px;border-radius:7px;display:inline-block;margin-top:7px}
+.callrow{display:flex;align-items:center;gap:10px;padding:13px 2px;border-bottom:1px solid var(--line)}.callrow .avatar{width:38px;height:38px}.callrow .chatmeta{flex:1}.callrow .preview{white-space:normal}
+.notePaper{background:#f1e7c9;color:#302d29;border-radius:14px;padding:16px;min-height:145px;font-family:Georgia,serif;line-height:1.9;font-size:13px;transform:rotate(-.3deg);box-shadow:0 9px 20px #0004}
+.smallbtn{background:#66527c;border:0;color:white;border-radius:10px;padding:9px 12px;margin-top:10px;font-size:11px;cursor:pointer}
+.toast{position:absolute;top:42px;left:12px;right:12px;background:#272532f2;border:1px solid #a995d566;border-radius:14px;padding:12px;z-index:20;box-shadow:0 12px 30px #0008;display:none;font-size:11px;line-height:1.6}.toast strong{display:block;margin-bottom:3px}
+.footerhint{text-align:center;color:#858191;font-size:9px;margin-top:9px}
+@media(max-height:700px){.phone{height:calc(100dvh - 25px);min-height:590px}.hero{height:130px}.icon{width:48px;height:48px}.apps{gap:12px 8px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="caption">CASE FILE 017 · INTERACTIVE MYSTERY</div>
+  <div class="phone">
+    <div class="screen">
+      <div class="status"><span id="clock">21:17</span><span>▮▮▮　 Wi-Fi　 ▰</span><div class="island"></div></div>
+      <div class="topbar"><div><div class="kicker">جهاز مسترجَع · دليل رقم 01</div><div class="title" id="screenTitle">إيلينا موريس</div></div><div class="case">ملف 017</div></div>
+      <div class="toast" id="toast"><strong>رسالة جديدة</strong><span id="toastText"></span></div>
+
+      <main class="view active" id="home">
+        <div class="hero"><div class="moon"></div><div class="building"></div><div class="heroText"><small>مفقودة منذ 3 أيام</small><h2>أين إيلينا؟</h2></div></div>
+        <div class="sectionHead">تطبيقات الجهاز <span>آخر مزامنة: 23:48</span></div>
+        <div class="apps">
+          <button class="app" onclick="showView('whatsapp','WhatsApp')"><span class="icon whatsapp">☎</span><label>WhatsApp</label></button>
+          <button class="app" onclick="showView('photos','الصور')"><span class="icon photos">🌈</span><label>الصور</label></button>
+          <button class="app" onclick="showView('calls','المكالمات')"><span class="icon calls">📞</span><label>المكالمات</label></button>
+          <button class="app" onclick="showView('notes','الملاحظات')"><span class="icon notes">📝</span><label>الملاحظات</label></button>
+          <button class="app" onclick="showView('files','الملفات')"><span class="icon files">📁</span><label>الملفات</label></button>
+          <button class="app" onclick="showView('settings','الإعدادات')"><span class="icon settings">⚙️</span><label>الإعدادات</label></button>
+        </div>
+        <div class="notice">⚠️ <b>ملاحظة المحقق:</b> الهاتف عُثر عليه قرب محطة القطار. لا تفترض أن كل شخص في سجل المحادثات يقول الحقيقة. بعض الأدلة لا تظهر إلا بعد التفاعل.</div>
+        <div class="sectionHead">آخر تنبيه <span>منذ لحظات</span></div>
+        <div class="card"><p>تم استرجاع 86% من بيانات الجهاز. توجد محادثة واحدة حُذفت أجزاء منها، ومجلد محمي بكلمة مرور.</p></div>
+      </main>
+
+      <main class="view" id="whatsapp">
+        <div class="pageHead"><h2>WhatsApp</h2><button class="back" onclick="goHome()">الرئيسية</button></div>
+        <div class="sub">الدردشات · آخر نشاط قبل 3 أيام</div>
+        <div class="chatlist" id="chatlist"></div>
+      </main>
+
+      <main class="view" id="chatView">
+        <div class="chatroom">
+          <div class="chatbar"><button class="back" onclick="showView('whatsapp','WhatsApp')">‹</button><div class="avatar" id="roomAvatar">?</div><div class="chatmeta"><div class="chatname" id="roomName">محادثة</div><div class="online" id="roomStatus">آخر ظهور غير معروف</div></div><span style="color:#b9accd">⋮</span></div>
+          <div class="messages" id="messages"></div>
+          <div class="replyArea" id="replyArea"></div>
+        </div>
+      </main>
+
+      <main class="view" id="photos">
+        <div class="pageHead"><h2>الصور</h2><button class="back" onclick="goHome()">رجوع</button></div>
+        <div class="sub">المكتبة · 4 عناصر مسترجعة</div>
+        <div class="card evidence"><div class="thumb">🌉</div><div><h3>IMG_2048 · الجسر</h3><p>صورة ليلية. في الخلفية يظهر شخص قرب سيارة سوداء.</p><span class="tag">وقت الالتقاط 23:16</span></div></div>
+        <div class="card evidence"><div class="thumb">🎟️</div><div><h3>تذكرة قطار</h3><p>رحلة باتجاه الشمال، لكن التذكرة لم تُستخدم.</p><span class="tag">تمت إضافتها للأدلة</span></div></div>
+        <div class="card evidence"><div class="thumb">🪞</div><div><h3>صورة مرآة محذوفة</h3><p>انعكاس ساعة حائط يشير إلى 11:42. الوجه خارج الإطار.</p><span class="tag">استرجاع جزئي</span></div></div>
+        <div class="card evidence"><div class="thumb">📍</div><div><h3>موقع محفوظ</h3><p>مستودع قديم على أطراف المدينة. آخر موقع معروف للهاتف.</p><button class="smallbtn" onclick="unlockClue('location')">تسجيل الموقع كدليل</button></div></div>
+      </main>
+
+      <main class="view" id="calls">
+        <div class="pageHead"><h2>المكالمات</h2><button class="back" onclick="goHome()">رجوع</button></div>
+        <div class="sub">سجل المكالمات الأخيرة</div>
+        <div class="callrow"><div class="avatar">?</div><div class="chatmeta"><div class="chatname">رقم مجهول</div><div class="preview">مكالمة فائتة · مرتان</div></div><span class="time">23:51</span></div>
+        <div class="callrow"><div class="avatar">م</div><div class="chatmeta"><div class="chatname">ميا هاربر</div><div class="preview">مكالمة واردة · 02:14</div></div><span class="time">22:06</span></div>
+        <div class="callrow"><div class="avatar">آ</div><div class="chatmeta"><div class="chatname">آدم كول</div><div class="preview">مكالمة صادرة · 00:37</div></div><span class="time">21:49</span></div>
+        <div class="callrow"><div class="avatar">🔒</div><div class="chatmeta"><div class="chatname">مكالمة محذوفة</div><div class="preview">تم حذف بيانات الرقم</div></div><button class="back" onclick="unlockClue('call')">استرجاع</button></div>
+        <div class="notice">سجل المكالمات يثبت أن الرقم المجهول اتصل بعد الوقت الذي قالت فيه ميا إنها لم تعد تسمع من إيلينا.</div>
+      </main>
+
+      <main class="view" id="notes">
+        <div class="pageHead"><h2>الملاحظات</h2><button class="back" onclick="goHome()">رجوع</button></div>
+        <div class="sub">ملاحظة مثبتة · آخر تعديل 23:08</div>
+        <div class="notePaper">لازم نلقى النسخة الأصلية قبل منتصف الليل.<br><br>ميا تعرف أكثر مما تقول. آدم قال إن الملف انتهى، لكني شفت اسمه في السجل.<br><br><b>لو صارلي شيء… لا تثقوا في أول اعتراف.</b></div>
+        <button class="smallbtn" onclick="unlockClue('note')">حفظ الملاحظة كدليل</button>
+        <div class="card" style="margin-top:13px"><h3>ملاحظة محذوفة</h3><p>«هو مش الشخص اللي كنت نحسبه…» بقية النص غير مسترجعة.</p><button class="smallbtn" onclick="unlockClue('deletedNote')">محاولة الاسترجاع</button></div>
+      </main>
+
+      <main class="view" id="files">
+        <div class="pageHead"><h2>الملفات</h2><button class="back" onclick="goHome()">رجوع</button></div>
+        <div class="sub">على الـ iPhone · 3 ملفات</div>
+        <div class="card"><h3>📄 incident_17.pdf</h3><p>تقرير حادث قديم مرتبط بالمستودع. الملف تالف جزئيًا.</p><span class="tag">غير مكتمل</span></div>
+        <div class="card locked"><h3>🔒 EVIDENCE_FINAL.zip</h3><p>هذا الملف محمي بكلمة مرور من 4 أرقام.</p><button class="smallbtn" onclick="passwordTry()">إدخال كلمة المرور</button></div>
+        <div class="card"><h3>🎙️ voice_memo_03</h3><p>مذكرة صوتية: 00:17 · تم استرجاع نص جزئي.</p><button class="smallbtn" onclick="showToast('مذكرة صوتية','صوت امرأة: «لو قال لك إنه كان في البيت، اسأله عن الساعة 11:42.»')">قراءة النص المسترجع</button></div>
+      </main>
+
+      <main class="view" id="settings">
+        <div class="pageHead"><h2>الإعدادات</h2><button class="back" onclick="goHome()">رجوع</button></div>
+        <div class="card"><h3>حول هذا الجهاز</h3><p>Elena’s iPhone · تم العثور عليه في 12 أكتوبر، الساعة 00:14.</p></div>
+        <div class="card"><h3>الحالة الجنائية</h3><p id="evidenceCount">الأدلة المسجلة: 0</p><p>كل اختيار قد يفتح معلومة جديدة. ارجع للمحادثة المجهولة بعد اكتشاف أدلة.</p></div>
+        <button class="smallbtn" onclick="resetGame()">إعادة بدء القضية</button>
+      </main>
+      <div class="bottomNav"></div>
+    </div>
+  </div>
+  <div class="footerhint">تجربة قصصية خيالية · كل الرسائل والأسماء داخل اللعبة فقط</div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const views=[...document.querySelectorAll('.view')];
+let currentChat='unknown', evidence=new Set(), unknownStage=0, passwordAttempts=0;
+const chats={
+ mia:{name:'ميا هاربر',avatar:'م',preview:'إيلينا، ردي عليّ…',status:'آخر ظهور منذ 3 أيام',messages:[
+  ['them','إيلينا، وينك؟ رنيت عليك عشر مرات.','22:06'],['me','محتاجة وقت بروحي. ما تسأليش حد عليّ.','22:09'],['them','هو رجع يكلمك؟ قوليلي إنك ما قابلتيهش.','22:11'],['me','ما نقدرش نشرحلك في الرسائل.','22:13']]},
+ adam:{name:'آدم كول',avatar:'آ',preview:'الموضوع انتهى، اتفقنا؟',status:'آخر ظهور منذ يومين',messages:[
+  ['me','لقيت الملف القديم. شن علاقته بالمستودع؟','21:31'],['them','قلتلك الموضوع انتهى يا إيلينا. احذفي كل شيء.','21:34'],['me','إنت قلتلي ما فيش حد تضرر.','21:36'],['them','ما تفتحيش الموضوع مرة ثانية.','21:37']]},
+ unknown:{name:'رقم مجهول',avatar:'?',preview:'إنت مش إيلينا.',status:'رقم غير محفوظ · مشفّر',messages:[
+  ['me','عرفت الحقيقة. لازم نتقابل الليلة.','23:38'],['them','كان المفروض ما تعرفيش.','23:41'],['me','إنت قلتلي إن الموضوع انتهى.','23:42']]},
+ sara:{name:'سارة',avatar:'س',preview:'ما كانش المفروض نمشي معاها…',status:'آخر ظهور منذ 4 أيام',messages:[
+  ['me','سارة، انتي قلتي إنك ما شفتيهاش.','18:02'],['them','أنا ما قلتش هكي. قلت ما شفتهاش بعد العشرة.','18:04'],['me','شن صار الساعة 11:42؟','18:05'],['them','من قالك على الوقت هذا؟','18:06']]}
+};
+function showView(id,title){views.forEach(v=>v.classList.toggle('active',v.id===id));$('screenTitle').textContent=title||'إيلينا موريس';$('toast').style.display='none';if(id==='whatsapp')renderChats();if(id==='settings')$('evidenceCount').textContent='الأدلة المسجلة: '+evidence.size;}
+function goHome(){showView('home','إيلينا موريس')}
+function renderChats(){let order=['unknown','mia','adam','sara'];$('chatlist').innerHTML=order.map(id=>{let c=chats[id];let label=id==='unknown'&&unknownStage>0?'إنت مش إيلينا.':c.preview;return `<button class="chatrow" onclick="openChat('${id}')"><div class="avatar">${c.avatar}</div><div class="chatmeta"><div class="chatname">${c.name}</div><div class="preview">${label}</div></div><span class="time">${id==='unknown'?'23:51':'أمس'}</span></button>`}).join('')}
+function openChat(id){currentChat=id;let c=chats[id];$('roomAvatar').textContent=c.avatar;$('roomName').textContent=c.name;$('roomStatus').textContent=c.status;showView('chatView',c.name);renderMessages();if(id==='unknown'&&unknownStage===0){setTimeout(()=>{if(currentChat==='unknown'&&$('chatView').classList.contains('active'))incomingUnknown()},1600)}}
+function renderMessages(){let c=chats[currentChat];$('messages').innerHTML=c.messages.map(m=>bubble(m[0],m[1],m[2])).join('');$('messages').scrollTop=$('messages').scrollHeight;renderReplies()}
+function bubble(who,text,time){return `<div class="bubble ${who==='them'?'them':who==='me'?'me':'system'}">${escapeHtml(text)}${time?`<time>${time}</time>`:''}</div>`}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function incomingUnknown(){if(unknownStage!==0)return;unknownStage=1;chats.unknown.messages.push(['them','إنت مش إيلينا.','23:51']);renderMessages();showToast('رقم مجهول','إنت مش إيلينا. كيف صار الهاتف عندك؟')}
+function renderReplies(){let area=$('replyArea');if(currentChat!=='unknown'){area.innerHTML='<div class="replyDone">لا توجد رسائل جديدة.</div>';return}
+ if(unknownStage===0){area.innerHTML='<div class="replyHint">افتح الرسائل القديمة…</div><div class="replyDone">جارٍ استرجاع البيانات</div>';return}
+ let options=[];
+ if(unknownStage===1)options=[['من إنت؟','who'],['وين إيلينا؟','where'],['كيف عرفت إني مش هي؟','how']];
+ else if(unknownStage===2)options=[['أنا المحقق. إيلينا مفقودة.','detective'],['لقيت الهاتف بس.','found'],['جاوبني قبل ما نسكر الخط.','push']];
+ else if(unknownStage===3)options=[['شن صار في المستودع؟','warehouse'],['شن علاقة آدم بالموضوع؟','adam'],['نبي دليل نقدر نتحقق منه.','proof']];
+ else if(unknownStage===4)options=[['بنمشي للمستودع.','go'],['ما نثقش فيك. قول اسمك.','trust'],['علاش تساعدني؟','why']];
+ else if(unknownStage===5)options=[['من هو الشخص اللي لازم نحذر منه؟','warn'],['كيف نفتح الملف المقفول؟','file'],['عندي دليل جديد. بنواجهك بيه.','confront']];
+ else options=[['عندي دليل جديد. بنرجعلك.','again'],['قول الحقيقة كاملة.','truth']];
+ area.innerHTML='<div class="replyHint">اختاري ردّك — ردّه ممكن يتغيّر حسب اللي عرفتيه.</div><div class="choices">'+options.map(o=>`<button class="choice" onclick="chooseReply('${o[1]}','${o[0].replace(/'/g,"\\'")}')">${o[0]}</button>`).join('')+'</div>';
+}
+const responses={
+ who:{stage:2,reply:'اسمّي مش مهم توا. كنت آخر شخص تكلم مع إيلينا قبل ما تختفي… لكن مش بالاختيار.',system:'الرقم المجهول يعرف تفاصيل ما ظهرتش في أي محادثة ثانية.'},
+ where:{stage:2,reply:'لو كنت نعرف مكانها بالضبط، ما كنتش نراسلك من رقم ما يتتبعش.',system:'تهرّب من الإجابة، لكنه لم ينفِ أنه يعرفها.'},
+ how:{stage:2,reply:'إيلينا كانت تحط نقطة في آخر كل رسالة. إنت ما درتيهاش. تفصيلة صغيرة… بس هي كانت دايمًا تديرها.',system:'المرسل لاحظ اختلافًا دقيقًا في طريقة الكتابة.'},
+ detective:{stage:3,reply:'محقق؟ إذن اسمعني كويس. الوقت اللي في الصور مش صدفة. الساعة 11:42 هي اللحظة اللي تبدّل فيها كل شيء.',system:'تمت إضافة 11:42 إلى خطّ التحقيق.'},
+ found:{stage:3,reply:'إذن ما تفتحش أي ملف مقفول قبل ما تعرف شن داخله. بعض الأدلة تتزرع باش توجهك للشخص الغلط.',system:'تحذير: احتمال وجود دليل مضلل.'},
+ push:{stage:3,reply:'تمام. في مستودع قديم قرب السكة. لكن ما تمشيش بروحك… شخص ثاني يراقب المكان.',system:'تم تحديد موقع مهم: المستودع القديم.'},
+ warehouse:{stage:4,reply:'المستودع مش مكان اختفائها… هو المكان اللي بدأت منه الكذبة. دور على سجل الشحنات بتاريخ 17.',system:'الرقم المجهول يوجّهك إلى سجل شحنات قديم.'},
+ adam:{stage:4,reply:'آدم يعرف أكثر مما يقول. لكن لو واجهته توا، حيجهّز رواية ثانية. خليه يعتقد إنك ما شكيتيش فيه.',system:'آدم أصبح شخصًا محلّ اهتمام في التحقيق.'},
+ proof:{stage:4,reply:'افتح الملاحظات واقرأ آخر سطر. بعدين شوف سجل المكالمات. لو لقيت نفس الدقيقة في الاثنين، ارجعلي.',system:'تلميح: قارني الملاحظات بسجل المكالمات.'},
+ go:{stage:5,reply:'خذي بالك من التوقيت. قبل ما توصلي للمستودع، افتحي الملف EVIDENCE_FINAL. كلمة المرور مش تاريخ ميلادها… جرّبي الدقيقة اللي تتكرر.',system:'تلميح جديد لفتح الملف المحمي.'},
+ trust:{stage:5,reply:'ما تثقيش فيّ. هذا أحسن شيء تقدري تديريه. لكن ما تثقيش في أول شخص يعترف زادة.',system:'المرسل يصرّ على أن الاعتراف قد يكون مضلّلًا.'},
+ why:{stage:5,reply:'لأني وعدتها لو اختفت، نخلي حد يكمل اللي هي بدأته. وما توقعتش إنك إنت اللي تلقى الهاتف.',system:'يبدو أن للمرسل صلة شخصية بإيلينا.'},
+ warn:{stage:6,reply:'الشخص اللي يحاول يحميك أكثر من اللازم. راقبي أفعاله مش كلامه. و… ما ترديش على أي مكالمة من رقمي القديم.',system:'تحذير غامض — قد يكون المرسل نفسه غير موثوق.'},
+ file:{stage:6,reply:'أربع أرقام. افتحي الصور وشوفي الساعة في الصورة المحذوفة. هي مش مجرد وقت… هي المفتاح.',system:'التلميح يشير إلى 11:42؛ جرّبي 1142.'},
+ confront:{stage:6,reply:'لو عندك دليل، لا ترسليه هنا. خليه عندك. في هالقضية، كل رسالة ممكن تكون مقروءة من شخص ثاني.',system:'تحذير أمني داخل القصة.'},
+ again:{stage:6,reply:'رجعتي. هذا يعني إنك لقيتي حاجة. تذكري: أنا نقدر نساعدك… ونقدر نكون السبب اللي يخليك تمشي في الاتجاه الغلط.',system:'الثقة في الرقم المجهول ما زالت غير محسومة.'},
+ truth:{stage:6,reply:'الحقيقة مش شخص واحد ولا لحظة واحدة. إيلينا اكتشفت إن الحادث القديم ما كانش حادث. لكن اسم الشخص اللي غيّر التقرير… ما زال ناقص من الملف.',system:'تم فتح خيط جديد في القضية: تقرير الحادث القديم.'}
+};
+function chooseReply(key,label){if(currentChat!=='unknown')return;let item=responses[key];if(!item)return;chats.unknown.messages.push(['me',label,'23:52']);chats.unknown.messages.push(['them',item.reply,'23:52']);chats.unknown.messages.push(['system',item.system,'']);unknownStage=item.stage;renderMessages();$('messages').scrollTop=$('messages').scrollHeight;if(key==='proof')evidence.add('hint');if(key==='file')evidence.add('passwordHint');}
+function showToast(title,msg){$('toast').innerHTML='<strong>'+escapeHtml(title)+'</strong><span>'+escapeHtml(msg)+'</span>';$('toast').style.display='block';setTimeout(()=>$('toast').style.display='none',4800)}
+function unlockClue(key){let messages={location:['موقع مسجل','تمت إضافة المستودع القديم إلى قائمة الأدلة.'],call:['استرجاع جزئي','آخر رقم محذوف اتصل عند 23:42.'],note:['دليل محفوظ','تم حفظ الملاحظة: «لا تثقوا في أول اعتراف.»'],deletedNote:['استرجاع غير مكتمل','ظهر سطر إضافي: «الاسم في التقرير مش اسمه الحقيقي.»']};evidence.add(key);showToast(messages[key][0],messages[key][1]);}
+function passwordTry(){let val=prompt('أدخلي كلمة المرور المكوّنة من 4 أرقام:');if(val===null)return;if(val==='1142'){evidence.add('finalFile');showToast('تم فتح الملف','التقرير: الساعة 11:42 تم تعديل سجل دخول المستودع. اسم المستخدم: A. Cole.');}else{passwordAttempts++;showToast('كلمة مرور خاطئة',passwordAttempts>1?'جرّبي تربطي الوقت المتكرر بالصور والمكالمات.':'تلميح: الوقت اللي يتكرر في الأدلة قد يكون مهم.');}}
+function resetGame(){if(confirm('متأكدة تبي تعيدي القضية من البداية؟'))location.reload()}
+function tick(){let d=new Date();$('clock').textContent=d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'})}tick();setInterval(tick,30000);
+renderChats();
+</script>
+</body>
+</html>
